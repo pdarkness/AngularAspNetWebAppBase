@@ -1,6 +1,5 @@
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 /* Wrapping element */
@@ -30,5 +29,13 @@ textarea {
 .socialFooter {
     background-color: #f3f3f3;
     border-width: 0 0 1px;
-    border: 1px solid #222;
+    border-top: 1px solid #222;
+}
+
+.panel {
+    margin-top: 15px;
+}
+
+.well {
+    margin-bottom: 0px;
 }
