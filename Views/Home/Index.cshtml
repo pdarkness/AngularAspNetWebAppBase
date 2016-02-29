@@ -38,38 +38,17 @@
     </a>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <div class="panel panel-success">
-            <div class="panel-heading">Cute kitty</div>
-            <img style="height:10em;width:100%" src="~/images/kitty.jpg" />
-            <div class="well">
-                <h3>The climb</h3>
-                <p>First tree</p>
-                <p>Going to be a lion when he grows up!</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
+<div class="row" ng-controller="MainController">
+    <div class="col-md-4" ng-repeat="item in products">
         <div class="panel panel-primary">
-            <div class="panel-heading">Announcing this years model!</div>
-            <img style="height:10em;width:100%" src="~/images/harley.jpg" />
+            <div class="panel-heading">{{item.heading}}</div>
+            <img style="height:10em;width:100%" ng-src="{{item.img}}" />
             <div class="well">
-                <h3>2016 Model is here!</h3>
-                <p>Get your bike today</p>
-                <p>American bikes</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="panel panel-warning">
-            <div class="panel-heading">Seminars</div>
-            <img style="height:10em;width:100%" src="~/images/DontKillTheDream.jpg" />
-            <div class="well">
-                <h3>Lern how to</h3>
-                <p>Follow you dreams!</p>
-                <p>Face life head on!</p>
+                <h3>{{item.subHeading}}</h3>
+                <p>{{item.p0}}</p>
+                <p>{{item.p1}}</p>
             </div>
         </div>
     </div>
 </div>
+

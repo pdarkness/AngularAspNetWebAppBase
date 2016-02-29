@@ -9,8 +9,5 @@
     "angular": "1.4.8",
     "angular-route": "1.4.8",
     "components-font-awesome": "4.4.0"
-  },
-  "resolutions": {
-    "components-font-awesome": "4.4.0"
   }
 }
